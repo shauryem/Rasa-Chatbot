@@ -1,27 +1,43 @@
-## happy path
+## greeting path 1
 * greet
-  - utter_greet
-* mood_great
-  - utter_happy
+- utter_greet
 
-## sad path 1
-* greet
-  - utter_greet
-* mood_unhappy
-  - utter_cheer_up
-  - utter_did_that_help
-* affirm
-  - utter_happy
+## fine path 1
+* fine_normal
+- utter_help
 
-## sad path 2
-* greet
-  - utter_greet
-* mood_unhappy
-  - utter_cheer_up
-  - utter_did_that_help
-* deny
-  - utter_goodbye
+## fine path 2
+* fine_ask
+- utter_reply
 
-## say goodbye
-* goodbye
-  - utter_goodbye
+## thanks path 1
+* thanks
+- utter_anything_else
+
+## bye path 1
+* bye
+- utter_bye
+
+## what path 1
+* what
+- utter_what
+
+## price path 1
+* price
+- utter_price
+- utter_where_buy
+
+## where_buy path 1
+* where_buy
+- utter_where_buy
+
+## account path 1
+* account
+- utter_account
+
+## fallback
+- utter_default
+
+## activate path 1
+* activate
+- utter_activate
