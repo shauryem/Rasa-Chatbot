@@ -1,31 +1,72 @@
 intents:
-  - greet
-  - goodbye
-  - affirm
-  - deny
-  - mood_great
-  - mood_unhappy
+- greet
+- fine_ask
+- fine_normal
+- news
+- thanks
+- bye
+- what
+- price
+- where_buy
+- account
+- activate
 
 actions:
 - utter_greet
-- utter_cheer_up
-- utter_did_that_help
-- utter_happy
-- utter_goodbye
+- utter_reply
+- utter_help
+- utter_anything_else
+- utter_ofc
+- utter_bye
+- utter_default
+- utter_what
+- utter_price
+- utter_where_buy
+- utter_account
+- action_restart
+- action_get_news
+- utter_activate
 
 templates:
   utter_greet:
-  - text: "Hey! How are you?"
-
-  utter_cheer_up:
-  - text: "Here is something to cheer you up:"
-    image: "https://i.imgur.com/nGF1K8f.jpg"
-
-  utter_did_that_help:
-  - text: "Did that help you?"
-
-  utter_happy:
-  - text: "Great carry on!"
-
-  utter_goodbye:
-  - text: "Bye"
+    - text: Hello. How's it going?
+    - text: Hi, how are you?
+  utter_reply:
+    - text: I'm doing great. Please let me know what I can do for you.
+    - text: I'm doing great. Tell me how can I help you today?
+  utter_help:
+    - text: Great. How can I help you?
+    - text: Great. Tell me How can I help you?
+    - text: Great. Tell me what all news you would like to get.
+  utter_anything_else:
+    - text: No worries. Is there anything else I can help you with?
+    - text: No worries. Let me know if there is anything else I can help you with.
+  utter_ofc:
+    - text: I can definitely help you. The top 5 news of the {category}
+    - text: Surely, I can help you. The top 5 news of the {category}
+  utter_bye:
+    - text: Bye and have a nice day
+    - text: Bbye and have a nice day
+  utter_what:
+    - text: This is the flagship product from DigitizeThings.
+    - text: This is DigitizeThings' first product.
+    - text: We sell...
+  utter_price:
+    - text: We currently sell for $50.
+    - text: Our current price is $50.
+    - text: It's 50 dollars.
+  utter_where_buy:
+    - text: You can find this product at most tech retail stores.
+    - text: We are conviniently selling at all major tech retail stores!
+    - text: You can find us at...
+  utter_account:
+    - text: You can sign into your account at the top right of the page.
+    - text: Sign into your account from this link...
+    - text: You can find your information if you sign in, at the top right of the page.
+  utter_default:
+    - text: I am not sure what you're aiming for
+    - text: I am sorry but I am not able to get you.
+    - text: My appologies but I am not able to get you
+  utter_activate:
+    - text: Please visit this link
+    - text: Please visit our activation page at
